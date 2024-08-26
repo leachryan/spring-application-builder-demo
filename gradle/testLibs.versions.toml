@@ -1,0 +1,25 @@
+[versions]
+kotlin = "1.9.24"
+kotest = "5.8.1"
+kotest-spring = "1.1.3"
+kotest-testcontainers = "2.0.2"
+spring-boot = "3.3.2"
+testcontainers = "1.20.0"
+
+[libraries]
+io-kotest-kotestRunnerJunitJvm = { module = "io.kotest:kotest-runner-junit5-jvm", version.ref = "kotest" }
+io-kotest-kotestSpring = { module = "io.kotest.extensions:kotest-extensions-spring", version.ref = "kotest-spring" }
+io-kotest-kotestTestcontainers = { module = "io.kotest.extensions:kotest-extensions-testcontainers", version.ref = "kotest-testcontainers" }
+org-jetbrains-kotlinTest = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+org-testcontainers-postgres = { module = "org.testcontainers:postgresql", version.ref = "testcontainers" }
+org-testcontainers-junit-jupiter = { module = "org.testcontainers:junit-jupiter", version.ref = "testcontainers" }
+org-testcontainers-testcontainers = { module = "org.testcontainers:testcontainers", version.ref = "testcontainers" }
+org-testcontainers-testcontainersBom = { module = "org.testcontainers:testcontainers-bom", version.ref = "testcontainers" }
+spring-boot-starter-test = { module = "org.springframework.boot:spring-boot-starter-test", version.ref = "spring-boot" }
+
+[bundles]
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-noarg = { id = "org.jetbrains.kotlin.plugin.noarg", version.ref = "kotlin" }
+kotlin-allopen = { id = "org.jetbrains.kotlin.plugin.allopen", version.ref = "kotlin" }
